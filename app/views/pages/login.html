@@ -1,0 +1,48 @@
+<style type="text/css">
+    body {
+        background-color: #15141A !important;
+    }
+</style>
+
+<br />
+<div class="container">
+    <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="text-center">
+                            <h3><img src="app/logo.png" style="color:black;width:50%;height:auto;" /></h3>
+                            <h2 class="text-center">Sign In</h2>
+                            <p>Please Sign In Here.</p>
+                            <div class="panel-body" ng-controller="LoginCtrl">
+                                <form class="form" ng-submit="checkValid(myUsername,myPass)" role="form">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-user color-blue"></i></span>
+                                                <input id="emailInput" placeholder="email address" class="form-control" type="email" ng-model="myUsername" autofocus>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-log-in color-blue"></i></span>
+                                                <input class="form-control" placeholder="Password" name="myPass" type="password" ng-model="myPass" value="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="btn btn-lg btn-primary btn-block" value="Login    " type="submit">
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <a ui-sref="ForgotPassword">Forgot Password</a>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
